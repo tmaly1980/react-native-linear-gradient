@@ -30,6 +30,9 @@ if (isNewArchitectureEnabled()) {
 }
 
 android {
+    buildFeatures {
+        buildConfig = true
+    }
     namespace 'com.BV.LinearGradient'
     compileSdkVersion safeExtGet('compileSdkVersion', 31).toInteger()
     defaultConfig {
